@@ -340,7 +340,7 @@
 											<i class="flaticon-skyline"></i>
 										</span>
 										<div class="desc">
-											<h3>Wirless Infrastructure</h3>
+											<h3>Wireless Infrastructure</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 												sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
 											</div>
