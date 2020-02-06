@@ -161,8 +161,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h2>All Kinds of Data Cabinets</h2>
-				   					<h1>Data Cabinet</h1>
+				   					<h2>All Kinds of Data Centers</h2>
+				   					<h1>Data Centers</h1>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -195,7 +195,7 @@
 					</div>
 					<div class="col-md-4 col-md-pull-4 animate-box">
 						<div class="box text-center">
-							<span class="num">10</span>
+							<span class="num">25</span>
 							<span class="yr">Years</span>
 							<span class="thin">Experience</span>
 						</div>
@@ -278,17 +278,17 @@
 				<div class="row">
 					<div class="col-md-4 text-center animate-box">
 						<span class="icon"><i class="flaticon-skyline"></i></span>
-						<span class="colorlib-counter js-counter" data-from="0" data-to="39" data-speed="5" data-refresh-interval="5"></span>
+						<span class="colorlib-counter js-counter" data-from="0" data-to="109" data-speed="5" data-refresh-interval="5"></span>
 						<span class="colorlib-counter-label">Projects</span>
 					</div>
 					<div class="col-md-4 text-center animate-box">
 						<span class="icon"><i class="flaticon-engineer"></i></span>
-						<span class="colorlib-counter js-counter" data-from="0" data-to="23" data-speed="5" data-refresh-interval="5"></span>
+						<span class="colorlib-counter js-counter" data-from="0" data-to="27" data-speed="5" data-refresh-interval="5"></span>
 						<span class="colorlib-counter-label">Engineers</span>
 					</div>
 					<div class="col-md-4 text-center animate-box">
 						<span class="icon"><i class="flaticon-worker"></i></span>
-						<span class="colorlib-counter js-counter" data-from="0" data-to="13" data-speed="5" data-refresh-interval="5"></span>
+						<span class="colorlib-counter js-counter" data-from="0" data-to="19" data-speed="5" data-refresh-interval="5"></span>
 						<span class="colorlib-counter-label">Partners</span>
 					</div>
 				</div>
@@ -352,7 +352,7 @@
 											<i class="flaticon-crane"></i>
 										</span>
 										<div class="desc">
-											<h3>Data Cabinets</h3>
+											<h3>Data Centers</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 												sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
 											</div>
