@@ -364,7 +364,7 @@
 											<i class="flaticon-sketch"></i>
 										</span>
 										<div class="desc">
-											<h3>Professional Training</h3>
+											<h3>Government and Defense</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 												sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
 											</div>
@@ -376,7 +376,7 @@
 											<i class="flaticon-conveyor"></i>
 										</span>
 										<div class="desc">
-											<h3>Construction Management</h3>
+											<h3>Professional Training</h3>
 											<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 											</div>
 									</div>
