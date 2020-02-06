@@ -575,7 +575,7 @@
 						</p>
 					</div>
 					<div class="col-md-3 col-md-push-1 colorlib-widget">
-						<h4>Products &Services</h4>
+						<h4>Products & Services</h4>
 						<p>
 							<ul class="colorlib-footer-links">
 								<li>VSAT Network</a></li>
@@ -606,7 +606,7 @@
 					<div class="col-md-3 col-md-push-1">
 						<h4>Contact Info</h4>
 						<ul class="colorlib-footer-links">
-							<li>291 South 21th Street, <br> Suite 721 Maitama ABJ 10016</li>
+							<li>291 South 24th Street, <br> Suite 721 Maitama ABJ 10016</li>
 							<li><a href="tel://1234567920"><i class="icon-phone"></i> +234 123 235 9833</a></li>
 							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> demo@demowebsite.com</a></li>
 							<li><a href="http://luxehotel.com"><i class="icon-location4"></i> demowebsite.com</a></li>
