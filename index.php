@@ -63,7 +63,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html">Demo</a></div>
+							<div id="colorlib-logo"><a href="index.php">Demo</a></div>
 						</div>
 						<div class="col-xs-10 text-left menu-1">
 							<ul>
@@ -89,7 +89,7 @@
 									</ul>
 								</li>
 								<li class="has-dropdown">
-									<a href="services.html">Solutions</a>
+									<a href="#">Solutions</a>
 									<ul class="dropdown">
 										<li><h4 style="color:white;">Satelite Connectivity For</h4></li>
 										<li><a href="#">Enterprise</a></li>
@@ -245,7 +245,7 @@
 												<div class="desc-tc">
 													<div class="desc">
 														<h3><span><small>2</small></span> CBC Bank Project</h3>
-														<p>Wirless Infrastructure for CBC Bank</p>
+														<p>Wireless Infrastructure for CBC Bank</p>
 													</div>
 												</div>
 											</div>
