@@ -358,10 +358,10 @@
 										<div class="desc">
 											<h3>Renewable Energy</h3>
 											<ul>
-                                                <li>Bio-Tech</li>
                                                 <li>Solar</li>
                                                 <li>Wind</li>
-                                                <li>Inverter</li>
+												<li>Inverter</li>
+												<li>Bio-Tech</li>
                                             </ul>
 											</div>
 									</div>
