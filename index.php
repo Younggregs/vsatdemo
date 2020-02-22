@@ -62,10 +62,14 @@
 			<div class="top-menu">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.php"><img src="images/Logo.png" height="50" width="100"></a></div>
+						<div class="col-xs-3">
+							<div id="colorlib-logo"><a href="index.php">
+								Inter Web
+								<br />
+								<p style="font-size: 0.6em;">SATCOM Limited</p>
+							</a></div>
 						</div>
-						<div class="col-xs-10 text-left menu-1">
+						<div class="col-xs-9 text-left menu-1">
 							<ul>
 								<li class="has-dropdown">
 									<a href="#">Products & Services</a>
@@ -173,8 +177,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h2>All Kinds of Data Cabinets</h2>
-				   					<h1>Data Cabinet</h1>
+				   					<h2>All types of Data Centers</h2>
+				   					<h1>Data Centers</h1>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -206,7 +210,7 @@
 						<h2><span class="thin">We have delivered</span> <span class="thick">The Best Projects</span></h2>
 					</div>
 					<div class="col-md-4 col-md-pull-4 animate-box">
-						<div class="box text-center">
+						<div class="box text-center" style="background-color: rgb(87, 6, 6);">
 							<span class="num">25</span>
 							<span class="yr">Years</span>
 							<span class="thin">Experience</span>
@@ -334,7 +338,7 @@
 								<div class="col-md-6 animate-box">
 									<div class="services">
 										<span class="icon">
-											<i class="flaticon-engineer"></i>
+											<img src="images/radar.png" height="70" width="70">
 										</span>
 										<div class="desc">
 											<h3>Vsat Network</h3>
@@ -349,7 +353,7 @@
 								<div class="col-md-6 animate-box">
 									<div class="services">
 										<span class="icon">
-											<i class="flaticon-engineering"></i>
+											<img src="images/solar-energy.png" height="70" width="70">
 										</span>
 										<div class="desc">
 											<h3>Renewable Energy</h3>
@@ -365,7 +369,7 @@
 								<div class="col-md-6 animate-box">
 									<div class="services">
 										<span class="icon">
-											<i class="flaticon-skyline"></i>
+										<img src="images/network.png" height="70" width="70">
 										</span>
 										<div class="desc">
 											<h3>Network Management System</h3>
@@ -381,7 +385,7 @@
 								<div class="col-md-6 animate-box">
 									<div class="services">
 										<span class="icon">
-											<i class="flaticon-crane"></i>
+											<i class="flaticon-engineer"></i>
 										</span>
 										<div class="desc">
 											<h3>Professional Training</h3>
@@ -503,10 +507,9 @@
 					<div class="col-md-3 col-md-push-1">
 						<h4>Contact Info</h4>
 						<ul class="colorlib-footer-links">
-							<li>291 South 21th Street, <br> Suite 721 Maitama ABJ 10016</li>
-							<li><a href="tel://1234567920"><i class="icon-phone"></i> +234 123 235 9833</a></li>
-							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> Inter Web@Inter Webwebsite.com</a></li>
-							<li><a href="http://luxehotel.com"><i class="icon-location4"></i> Inter Webwebsite.com</a></li>
+							<li>No 34 Tamale street,<br /> Off Barnenda street,<br /> Wuse Zone 3, Abuja</li>
+							<li><a href="tel://1234567920"><i class="icon-phone"></i>0806 909 6561</a></li>
+							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@interweb.ng</a></li>
 						</ul>
 					</div>
 				</div>
@@ -514,7 +517,7 @@
 					<div class="col-md-12 text-center">
 						<p>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-     					<small class="block">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Inter Web.  <br>Developer <a href="http://agregsproduction.herokuapp.com" target="_blank">A Gregs Production</a></small>
+     					<small class="block">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Inter Web SATCOM Limited.  <br>Developer <a href="http://agregsproduction.herokuapp.com" target="_blank">A Gregs Production</a></small>
     					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</p>
 					</div>
