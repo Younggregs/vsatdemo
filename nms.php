@@ -61,7 +61,7 @@
 		<nav class="colorlib-nav" role="navigation">
 			<div class="top-menu">
 				<div class="container">
-					<div class="row">
+				<div class="row">
 						<div class="col-xs-4">
 							<div id="colorlib-logo"><a href="index.php">
 								InterWeb
@@ -75,22 +75,22 @@
 									<a href="#">Products & Services</a>
 									<ul class="dropdown">
 										<li><h4 style="color:white;">VSAT Network</h4></li>
-										<li><a href="vsatnetwork.html#ka">K<sub>a</sub> Band</a></li>
-										<li><a href="vsatnetwork.html#c">C Band</a></li>
-										<li><a href="vsatnetwork.html#ku">K<sub>u</sub> Band</a></li>
+										<li><a href="vsatnetwork.php#ka">K<sub>a</sub> Band</a></li>
+										<li><a href="vsatnetwork.php#c">C Band</a></li>
+										<li><a href="vsatnetwork.php#ku">K<sub>u</sub> Band</a></li>
 										<br />
 										<li><h4 style="color:white;">Network Management System</h4></li>
-										<li><a href="nms.html#bandwidth">Bandwidth Monitoring</a></li>
-										<li><a href="nms.html#emergency">Emergency Response System</a></li>
-										<li><a href="nms.html#security">Security</a></li>
-										<li><a href="nms.html#spectral">Spectral Analysis</a></li>
+										<li><a href="nms.php#bandwidth">Bandwidth Monitoring</a></li>
+										<li><a href="nms.php#emergency">Emergency Response System</a></li>
+										<li><a href="nms.php#security">Security</a></li>
+										<li><a href="nms.php#spectral">Spectral Analysis</a></li>
 										<br />
 										<li><h4 style="color:white;">Satelite Connectivity Activities</h4></li>
-										<li><a href="sca.html#idirect">iDirect Broadband</a></li>
-										<li><a href="sca.html#uhp">UHP Broadband</a></li>
-										<li><a href="sca.html#private">Private Networks</a></li>
-										<li><a href="sca.html#hubless">Hubless Mesh</a></li>
-										<li><a href="sca.html#iot">IoT and M2M</a></li>
+										<li><a href="sca.php#idirect">iDirect Broadband</a></li>
+										<li><a href="sca.php#uhp">UHP Broadband</a></li>
+										<li><a href="sca.php#private">Private Networks</a></li>
+										<li><a href="sca.php#hubless">Hubless Mesh</a></li>
+										<li><a href="sca.php#iot">IoT and M2M</a></li>
 										<br />
 									</ul>
 								</li>
@@ -98,27 +98,27 @@
 									<a href="#">Solutions</a>
 									<ul class="dropdown">
 										<li><h4 style="color:white;">Provide Services For</h4></li>
-										<li><a href="scf.html#enterprise">Enterprise</a></li>
-										<li><a href="scf.html#education">Education</a></li>
-										<li><a href="scf.html#hospital">Hospitals</a></li>
-										<li><a href="scf.html#government">Government</a></li>
-										<li><a href="scf.html#isp">ISP's</a></li>
+										<li><a href="scf.php#enterprise">Enterprise</a></li>
+										<li><a href="scf.php#education">Education</a></li>
+										<li><a href="scf.php#hospital">Hospitals</a></li>
+										<li><a href="scf.php#government">Government</a></li>
+										<li><a href="scf.php#isp">ISP's</a></li>
 										<br />
 										<li><h4 style="color:white;">Renewable Energy</h4></li>
-										<li><a href="energy.html#wind">Wind</a></li>
-										<li><a href="energy.html#solar">Solar</a></li>
-										<li><a href="energy.html#inverter">Inverter</a></li>
-										<li><a href="energy.html#biotech">Bio-Tech</a></li>
+										<li><a href="energy.php#wind">Wind</a></li>
+										<li><a href="energy.php#solar">Solar</a></li>
+										<li><a href="energy.php#inverter">Inverter</a></li>
+										<li><a href="energy.php#biotech">Bio-Tech</a></li>
 										<br />
 										<li><h4 style="color:white;">Voice Over IP</h4></li>
-										<li><a href="vsatnetwork.html#vsat">VoIP</a></li>
+										<li><a href="vsatnetwork.php#vsat">VoIP</a></li>
 										<br />
 										<li><h4 style="color:white;">Wireless Infrastructure</h4></li>
-										<li><a href="vsatnetwork.html#vsat">WLAN Installations</a></li>
+										<li><a href="vsatnetwork.php#vsat">WLAN Installations</a></li>
 										<br />
 										<li><h4 style="color:white;">Data Communication</h4></li>
-										<li><a href="vsatnetwork.html#vsat">Data Centres</a></li>
-										<li><a href="vsatnetwork.html#vsat">Network</a></li>
+										<li><a href="vsatnetwork.php#vsat">Data Centres</a></li>
+										<li><a href="vsatnetwork.php#vsat">Network</a></li>
 										<br />
 
 									</ul>
@@ -151,8 +151,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h2>Providing all Kinds of NMS Services</h2>
-				   					<h1>Network Management Systems</h1>
+				   					<h2>Providing all Kinds of VSAT networks</h2>
+				   					<h1>VSAT</h1>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -168,19 +168,87 @@
 					<div class="col-md-12 animate-box">
                         <br /><br />
                         <h1 id="bandwidth">Bandwidth Monitoring</h1>
-						<p>Easily monitor your bandwidth. SNMP, Packet Sniffing, NetFlow</p>
+						<?php
+         					$filename = "bandwidth.txt";
+         					$file = fopen( $filename, "r" );
+         
+         					if( $file == false ) {
+            					echo ( "Error in opening file" );
+            					exit();
+         					}
+         
+							 $filesize = filesize( $filename );
+							 if($filesize <= 0){
+								$bandwidth = "";
+							 }else{
+								$bandwidth = fread( $file, $filesize );
+								fclose( $file );
+							 }
+         					echo ( "<p>$bandwidth</p>" );
+      					?>
                             
                             <br /><br />
                         <h1 id="emergency">Emergency Response System</h1>
-						<p>Reliable and durable Emergency Response Systems</p>
+						<?php
+         					$filename = "emergency.txt";
+         					$file = fopen( $filename, "r" );
+         
+         					if( $file == false ) {
+            					echo ( "Error in opening file" );
+            					exit();
+         					}
+         
+							 $filesize = filesize( $filename );
+							 if($filesize <= 0){
+								$emergency = "";
+							 }else{
+								$emergency = fread( $file, $filesize );
+								fclose( $file );
+							 }
+         					echo ( "<p>$emergency</p>" );
+      					?>
                             
                             <br /><br />
                         <h1 id="security">Security</h1>
-                        <p>Install security devices to protect your property.</p>
+                        <?php
+         					$filename = "security.txt";
+         					$file = fopen( $filename, "r" );
+         
+         					if( $file == false ) {
+            					echo ( "Error in opening file" );
+            					exit();
+         					}
+         
+							 $filesize = filesize( $filename );
+							 if($filesize <= 0){
+								$security = "";
+							 }else{
+								$security = fread( $file, $filesize );
+								fclose( $file );
+							 }
+         					echo ( "<p>$security</p>" );
+      					?>
                         
                         <br /><br />
                         <h1 id="spectral">Spectral Analysis</h1>
-						<p>ICP-OES and X-Ray Fluorescence Instruments for the Elemental Analysis of Materials, Chemicals and Additives.</p>
+						<?php
+         					$filename = "spectral.txt";
+         					$file = fopen( $filename, "r" );
+         
+         					if( $file == false ) {
+            					echo ( "Error in opening file" );
+            					exit();
+         					}
+         
+							 $filesize = filesize( $filename );
+							 if($filesize <= 0){
+								$spectral = "";
+							 }else{
+								$spectral = fread( $file, $filesize );
+								fclose( $file );
+							 }
+         					echo ( "<p>$spectral</p>" );
+      					?>
 					</div>
 				</div>
 			</div>
