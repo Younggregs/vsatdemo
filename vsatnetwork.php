@@ -61,7 +61,7 @@
 		<nav class="colorlib-nav" role="navigation">
 			<div class="top-menu">
 				<div class="container">
-					<div class="row">
+				<div class="row">
 						<div class="col-xs-4">
 							<div id="colorlib-logo"><a href="index.php">
 								InterWeb
@@ -75,22 +75,22 @@
 									<a href="#">Products & Services</a>
 									<ul class="dropdown">
 										<li><h4 style="color:white;">VSAT Network</h4></li>
-										<li><a href="vsatnetwork.html#ka">K<sub>a</sub> Band</a></li>
-										<li><a href="vsatnetwork.html#c">C Band</a></li>
-										<li><a href="vsatnetwork.html#ku">K<sub>u</sub> Band</a></li>
+										<li><a href="vsatnetwork.php#ka">K<sub>a</sub> Band</a></li>
+										<li><a href="vsatnetwork.php#c">C Band</a></li>
+										<li><a href="vsatnetwork.php#ku">K<sub>u</sub> Band</a></li>
 										<br />
 										<li><h4 style="color:white;">Network Management System</h4></li>
-										<li><a href="nms.html#bandwidth">Bandwidth Monitoring</a></li>
-										<li><a href="nms.html#emergency">Emergency Response System</a></li>
-										<li><a href="nms.html#security">Security</a></li>
-										<li><a href="nms.html#spectral">Spectral Analysis</a></li>
+										<li><a href="nms.php#bandwidth">Bandwidth Monitoring</a></li>
+										<li><a href="nms.php#emergency">Emergency Response System</a></li>
+										<li><a href="nms.php#security">Security</a></li>
+										<li><a href="nms.php#spectral">Spectral Analysis</a></li>
 										<br />
 										<li><h4 style="color:white;">Satelite Connectivity Activities</h4></li>
-										<li><a href="sca.html#idirect">iDirect Broadband</a></li>
-										<li><a href="sca.html#uhp">UHP Broadband</a></li>
-										<li><a href="sca.html#private">Private Networks</a></li>
-										<li><a href="sca.html#hubless">Hubless Mesh</a></li>
-										<li><a href="sca.html#iot">IoT and M2M</a></li>
+										<li><a href="sca.php#idirect">iDirect Broadband</a></li>
+										<li><a href="sca.php#uhp">UHP Broadband</a></li>
+										<li><a href="sca.php#private">Private Networks</a></li>
+										<li><a href="sca.php#hubless">Hubless Mesh</a></li>
+										<li><a href="sca.php#iot">IoT and M2M</a></li>
 										<br />
 									</ul>
 								</li>
@@ -151,8 +151,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h2>Reliable and durable Vsat Networks</h2>
-				   					<h1>VSAT Network</h1>
+				   					<h2>Providing all Kinds of VSAT networks</h2>
+				   					<h1>VSAT</h1>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -166,17 +166,70 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 animate-box">
-                        <br /><br />
+
+					 <br /><br />
                         <h1 id="ka">K<sub>a</sub> Band</h1>
-						<p>Microwave range of frequencies ranging from 27.0 to 40.0 gigahertz (GHz);</p>
+						<?php
+         					$filename = "kaBand.txt";
+         					$file = fopen( $filename, "r" );
+         
+         					if( $file == false ) {
+            					echo ( "Error in opening file" );
+            					exit();
+         					}
+         
+         					$filesize = filesize( $filename );
+							if($filesize <= 0){
+								$kaband = "";
+							 }else{
+								$kaband = fread( $file, $filesize );
+								fclose( $file );
+							 }
+         					echo ( "<p>$kaband</p>" );
+      					?>
                             
                             <br /><br />
                         <h1 id="c">C Band</h1>
-						<p>Microwave range of frequencies ranging from 4.0 to 8.0 gigahertz (GHz);</p>
+						<?php
+         					$filename = "cBand.txt";
+         					$file = fopen( $filename, "r" );
+         
+         					if( $file == false ) {
+            					echo ( "Error in opening file" );
+            					exit();
+         					}
+         
+         					$filesize = filesize( $filename );
+							if($filesize <= 0){
+								$cband = "";
+							 }else{
+								$cband = fread( $file, $filesize );
+								fclose( $file );
+							 }
+         					echo ( "<p>$cband</p>" );
+      					?>
                             
                             <br /><br />
                         <h1 id="ku">K<sub>u</sub> Band</h1>
-						<p>Microwave range of frequencies ranging from 12.0 to 18.0 gigahertz (GHz);</p>
+						<?php
+         					$filename = "kuBand.txt";
+         					$file = fopen( $filename, "r" );
+         
+         					if( $file == false ) {
+            					echo ( "Error in opening file" );
+            					exit();
+         					}
+         
+         					$filesize = filesize( $filename );
+							if($filesize <= 0){
+								$kuband = "";
+							 }else{
+								$kuband = fread( $file, $filesize );
+								fclose( $file );
+							 }
+         					echo ( "<p>$kuband</p>" );
+      					?>
+                       
 					</div>
 				</div>
 			</div>

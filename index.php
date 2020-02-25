@@ -62,7 +62,7 @@
 			<div class="top-menu">
 				<div class="container">
 					<div class="row">
-					<div class="col-xs-4">
+						<div class="col-xs-4">
 							<div id="colorlib-logo"><a href="index.php">
 								InterWeb
 								<br />
@@ -75,22 +75,22 @@
 									<a href="#">Products & Services</a>
 									<ul class="dropdown">
 										<li><h4 style="color:white;">VSAT Network</h4></li>
-										<li><a href="vsatnetwork.html#ka">K<sub>a</sub> Band</a></li>
-										<li><a href="vsatnetwork.html#c">C Band</a></li>
-										<li><a href="vsatnetwork.html#ku">K<sub>u</sub> Band</a></li>
+										<li><a href="vsatnetwork.php#ka">K<sub>a</sub> Band</a></li>
+										<li><a href="vsatnetwork.php#c">C Band</a></li>
+										<li><a href="vsatnetwork.php#ku">K<sub>u</sub> Band</a></li>
 										<br />
 										<li><h4 style="color:white;">Network Management System</h4></li>
-										<li><a href="nms.html#bandwidth">Bandwidth Monitoring</a></li>
-										<li><a href="nms.html#emergency">Emergency Response System</a></li>
-										<li><a href="nms.html#security">Security</a></li>
-										<li><a href="nms.html#spectral">Spectral Analysis</a></li>
+										<li><a href="nms.php#bandwidth">Bandwidth Monitoring</a></li>
+										<li><a href="nms.php#emergency">Emergency Response System</a></li>
+										<li><a href="nms.php#security">Security</a></li>
+										<li><a href="nms.php#spectral">Spectral Analysis</a></li>
 										<br />
 										<li><h4 style="color:white;">Satelite Connectivity Activities</h4></li>
-										<li><a href="sca.html#idirect">iDirect Broadband</a></li>
-										<li><a href="sca.html#uhp">UHP Broadband</a></li>
-										<li><a href="sca.html#private">Private Networks</a></li>
-										<li><a href="sca.html#hubless">Hubless Mesh</a></li>
-										<li><a href="sca.html#iot">IoT and M2M</a></li>
+										<li><a href="sca.php#idirect">iDirect Broadband</a></li>
+										<li><a href="sca.php#uhp">UHP Broadband</a></li>
+										<li><a href="sca.php#private">Private Networks</a></li>
+										<li><a href="sca.php#hubless">Hubless Mesh</a></li>
+										<li><a href="sca.php#iot">IoT and M2M</a></li>
 										<br />
 									</ul>
 								</li>
@@ -98,27 +98,27 @@
 									<a href="#">Solutions</a>
 									<ul class="dropdown">
 										<li><h4 style="color:white;">Provide Services For</h4></li>
-										<li><a href="scf.html#enterprise">Enterprise</a></li>
-										<li><a href="scf.html#education">Education</a></li>
-										<li><a href="scf.html#hospital">Hospitals</a></li>
-										<li><a href="scf.html#government">Government</a></li>
-										<li><a href="scf.html#isp">ISP's</a></li>
+										<li><a href="scf.php#enterprise">Enterprise</a></li>
+										<li><a href="scf.php#education">Education</a></li>
+										<li><a href="scf.php#hospital">Hospitals</a></li>
+										<li><a href="scf.php#government">Government</a></li>
+										<li><a href="scf.php#isp">ISP's</a></li>
 										<br />
 										<li><h4 style="color:white;">Renewable Energy</h4></li>
-										<li><a href="energy.html#wind">Wind</a></li>
-										<li><a href="energy.html#solar">Solar</a></li>
-										<li><a href="energy.html#inverter">Inverter</a></li>
-										<li><a href="energy.html#biotech">Bio-Tech</a></li>
+										<li><a href="energy.php#wind">Wind</a></li>
+										<li><a href="energy.php#solar">Solar</a></li>
+										<li><a href="energy.php#inverter">Inverter</a></li>
+										<li><a href="energy.php#biotech">Bio-Tech</a></li>
 										<br />
 										<li><h4 style="color:white;">Voice Over IP</h4></li>
-										<li><a href="vsatnetwork.html#vsat">VoIP</a></li>
+										<li><a href="vsatnetwork.php#vsat">VoIP</a></li>
 										<br />
 										<li><h4 style="color:white;">Wireless Infrastructure</h4></li>
-										<li><a href="vsatnetwork.html#vsat">WLAN Installations</a></li>
+										<li><a href="vsatnetwork.php#vsat">WLAN Installations</a></li>
 										<br />
 										<li><h4 style="color:white;">Data Communication</h4></li>
-										<li><a href="vsatnetwork.html#vsat">Data Centres</a></li>
-										<li><a href="vsatnetwork.html#vsat">Network</a></li>
+										<li><a href="vsatnetwork.php#vsat">Data Centres</a></li>
+										<li><a href="vsatnetwork.php#vsat">Network</a></li>
 										<br />
 
 									</ul>
@@ -217,12 +217,24 @@
 						</div>
 					</div>
 					<div class="col-md-4 animate-box">
-						<p>Inter Web Vsat Broadband service combines the benefits of the Vsat platform and years of 
-							our SATCOM engineering, delivering legendary broadband experience to every customer.
-							The service available anywhere in Nigeria.
-							Inter Web Vsat Broadband solution provides immediate global reach, enabling full integration across 
-							terrestrial and satellite networks and platforms. The solution supports critical IP applications from 
-							broadband Internet access to, Data Centers, Renewable energy, VoIP, Data Centers and Professional Training.</p>
+						<?php
+         					$filename = "about.txt";
+         					$file = fopen( $filename, "r" );
+         
+         					if( $file == false ) {
+            					echo ( "Error in opening file" );
+            					exit();
+         					}
+         
+							 $filesize = filesize( $filename );
+							 if($filesize <= 0){
+								$about = "";
+							 }else{
+								$about = fread( $file, $filesize );
+								fclose( $file );
+							 }
+         					echo ( "<p>$about</p>" );
+      					?>
 					</div>
 				</div>
 			</div>
